@@ -1,0 +1,10 @@
+Parameter,Description
+Routing Type,Proactive / Table-driven
+Protocol,DSDV
+Algorithm,Distance Vector (Bellman-Ford)
+Periodic Update,Every 15 seconds
+Triggered Update,After topology changes
+Route Metric,Hop count
+Route Freshness,Sequence number
+Broken Route,Infinite metric + odd sequence
+Fresh Route,Newer even sequence number

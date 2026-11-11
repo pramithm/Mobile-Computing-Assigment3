@@ -1,0 +1,68 @@
+MOBILE COMPUTING ASSIGNMENT 3
+Q7: EMERGENCY COMMUNICATION NETWORK
+=======================================================
+
+1. NETWORK ARCHITECTURE
+----------------------------------------
+The proposed network consists of ambulances, police vehicles, rescue teams, medical personnel, drone relays, gateway vehicles and a Command Centre.
+
+2. MOBILE IP IMPLEMENTATION
+----------------------------------------
+Mobile IP registration and gateway handoff were implemented using a Home Agent and two gateway Care-of Addresses.
+
+Microwave end-to-end delay: 65 ms
+Satellite end-to-end delay: 295 ms
+
+3. AODV ROUTING
+----------------------------------------
+AODV route discovery, RREQ broadcasting, RREP route establishment, data forwarding and RERR failure notification were implemented.
+
+4. FAILURE ANALYSIS
+----------------------------------------
+           Experiment            Failed Component    Status                                                                                                                    Route  Hop Count
+   Drone node failure                     Drone_1 Recovered Ambulance -> Police -> Rescue_Team -> Medical_Team -> Drone_2 -> Gateway_B -> Command_Centre_HA -> Command_Centre_Server          7
+Wireless link failure           Drone_1-Gateway_A Recovered                               Ambulance -> Drone_1 -> Drone_2 -> Gateway_B -> Command_Centre_HA -> Command_Centre_Server          5
+    Network partition Both gateway backhaul links Recovered                               Ambulance -> Drone_1 -> Drone_2 -> Gateway_B -> Command_Centre_HA -> Command_Centre_Server          5
+
+Recovery success rate: 100.00%
+
+5. PERFORMANCE RESULTS
+----------------------------------------
+         Scenario  Backhaul  Connected  Hop Count  End-to-End Delay (ms)  Packet Delivery Ratio (%)  Control Transmissions
+           Normal Microwave       True          4                     65                      97.03                     13
+           Normal Satellite       True          4                    295                      95.57                     13
+ 20% Node Failure Microwave       True          4                     65                      97.03                     11
+ 20% Node Failure Satellite       True          4                    295                      95.57                     11
+ 40% Node Failure Microwave       True          4                     65                      97.03                      9
+ 40% Node Failure Satellite       True          4                    295                      95.57                      9
+     Link Failure Microwave       True          5                     75                      96.06                     14
+     Link Failure Satellite       True          5                    305                      94.61                     14
+Network Partition Microwave      False          0                      0                       0.00                      0
+Network Partition Satellite      False          0                      0                       0.00                      0
+   After Recovery Microwave       True          5                     75                      96.06                     14
+   After Recovery Satellite       True          5                    305                      94.61                     14
+
+6. JOINT NETWORK COMPONENTS
+----------------------------------------
+             Component                              Implementation                                        Purpose
+Emergency Mobile Nodes Ambulance, Police, Rescue and Medical Teams                 Mobile emergency communication
+         Wireless Mesh              Multi-hop wireless connections Infrastructure-independent local communication
+          Drone Relays                         Drone_1 and Drone_2                Alternative communication paths
+                  AODV                         RREQ, RREP and RERR         On-demand routing and failure recovery
+             Mobile IP               Home Agent and Foreign Agents              Mobility and gateway registration
+              Backhaul                     Microwave and Satellite                   Connection to Command Centre
+
+7. CONCLUSION
+----------------------------------------
+1. The emergency network uses mobile nodes, drone relays and gateway vehicles.
+2. Mobile IP maintains the mapping between the permanent Home Address and current Care-of Address.
+3. AODV establishes routes on demand using RREQ and RREP messages.
+4. RERR reports broken links and allows affected routes to be rediscovered.
+5. Alternative gateway connectivity helps restore communication after failures.
+6. Microwave backhaul provides lower delay than satellite under the configured assumptions.
+7. Network partition recovery requires restoring at least one gateway connection.
+8. Redundant mesh paths improve emergency communication availability.
+
+8. SIMULATION LIMITATIONS
+----------------------------------------
+This implementation is an analytical Python network simulation using NetworkX. Performance metrics are calculated using configured delay and packet-loss assumptions. It does not model physical radio propagation, interference, congestion or real wireless packet captures.

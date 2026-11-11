@@ -1,0 +1,8 @@
+Requirement,Solution
+Mobility support,Mobile IP registration and CoA updates
+Low communication delay,Target one-way delay below 150 ms
+Reliable patient data,Acknowledgements and retransmissions
+Security,Authenticated registration and IPsec/TLS
+Handoff continuity,Buffering and fast registration
+Network reliability,Redundant Home Agents and link failover
+Data availability,EHR and hospital server backup

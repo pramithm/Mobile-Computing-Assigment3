@@ -1,0 +1,5 @@
+Network,Condition,Communication,Status
+Cellular,Normal,True,Connected
+Cellular,BS1 failure,False,Disconnected
+Ad Hoc,Normal,True,Connected
+Ad Hoc,Link A-B failure,True,Connected

@@ -1,0 +1,10 @@
+Parameter,Cellular,Ad Hoc
+Infrastructure,Fixed base stations and core,No fixed infrastructure
+Communication,Centralized through base station,Direct or multi-hop
+Routing,Handled by core network,Distributed routing
+Mobility,Managed handoff,Topology changes
+Topology,Fixed cell structure,Dynamic topology
+Scalability,Expand using additional cells,Limited by routing overhead
+Handoff,Network-controlled,Route discovery and repair
+Failure Handling,Base station failure affects its cell,Alternative paths may be found
+Applications,Mobile broadband and telephony,Disaster recovery and rescue

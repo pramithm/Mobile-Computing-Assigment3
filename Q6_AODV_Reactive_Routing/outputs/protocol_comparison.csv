@@ -1,0 +1,7 @@
+Parameter,DSDV,AODV
+Route discovery,Periodic and triggered updates,RREQ and RREP on demand
+Routing table,Entry for every destination,Entries for active destinations
+Control overhead,Continuous table broadcasts,Discovery floods and HELLO
+Initial delay,Low; route already available,Higher; discovery required
+Mobility handling,May use temporarily stale routes,RERR and route rediscovery
+Suitable scenario,Small and stable network,Large or highly mobile network

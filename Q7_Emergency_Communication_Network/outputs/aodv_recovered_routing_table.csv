@@ -1,0 +1,6 @@
+Node,Destination,Next Hop,Hop Count
+Ambulance,Command_Centre_Server,Drone_1,5
+Drone_1,Command_Centre_Server,Drone_2,4
+Drone_2,Command_Centre_Server,Gateway_B,3
+Gateway_B,Command_Centre_Server,Command_Centre_HA,2
+Command_Centre_HA,Command_Centre_Server,Command_Centre_Server,1

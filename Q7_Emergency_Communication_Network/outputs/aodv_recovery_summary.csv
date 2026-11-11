@@ -1,0 +1,3 @@
+Stage,Route,Hop Count,Status
+Before link failure,Ambulance -> Drone_1 -> Gateway_A -> Command_Centre_HA -> Command_Centre_Server,4,Connected
+After route recovery,Ambulance -> Drone_1 -> Drone_2 -> Gateway_B -> Command_Centre_HA -> Command_Centre_Server,5,Connected

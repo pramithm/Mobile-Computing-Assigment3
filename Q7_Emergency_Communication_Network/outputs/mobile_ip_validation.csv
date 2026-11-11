@@ -1,0 +1,3 @@
+Backhaul,One-way FA-HA Delay (ms),Registration Delay (ms),Handoff Interruption (ms),Estimated Lost Packets
+Microwave,40,110,180,9
+Satellite,270,570,640,32

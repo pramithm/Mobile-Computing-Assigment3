@@ -1,0 +1,13 @@
+Scenario,Backhaul,Connected,Hop Count,End-to-End Delay (ms),Packet Delivery Ratio (%),Control Transmissions
+Normal,Microwave,True,4,65,97.03,13
+Normal,Satellite,True,4,295,95.57,13
+20% Node Failure,Microwave,True,4,65,97.03,11
+20% Node Failure,Satellite,True,4,295,95.57,11
+40% Node Failure,Microwave,True,4,65,97.03,9
+40% Node Failure,Satellite,True,4,295,95.57,9
+Link Failure,Microwave,True,5,75,96.06,14
+Link Failure,Satellite,True,5,305,94.61,14
+Network Partition,Microwave,False,0,0,0.0,0
+Network Partition,Satellite,False,0,0,0.0,0
+After Recovery,Microwave,True,5,75,96.06,14
+After Recovery,Satellite,True,5,305,94.61,14

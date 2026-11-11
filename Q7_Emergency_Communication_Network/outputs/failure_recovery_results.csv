@@ -1,0 +1,4 @@
+Experiment,Failed Component,Status,Route,Hop Count
+Drone node failure,Drone_1,Recovered,Ambulance -> Police -> Rescue_Team -> Medical_Team -> Drone_2 -> Gateway_B -> Command_Centre_HA -> Command_Centre_Server,7
+Wireless link failure,Drone_1-Gateway_A,Recovered,Ambulance -> Drone_1 -> Drone_2 -> Gateway_B -> Command_Centre_HA -> Command_Centre_Server,5
+Network partition,Both gateway backhaul links,Recovered,Ambulance -> Drone_1 -> Drone_2 -> Gateway_B -> Command_Centre_HA -> Command_Centre_Server,5

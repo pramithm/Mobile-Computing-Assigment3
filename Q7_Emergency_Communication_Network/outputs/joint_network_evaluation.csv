@@ -1,0 +1,7 @@
+Component,Implementation,Purpose
+Emergency Mobile Nodes,"Ambulance, Police, Rescue and Medical Teams",Mobile emergency communication
+Wireless Mesh,Multi-hop wireless connections,Infrastructure-independent local communication
+Drone Relays,Drone_1 and Drone_2,Alternative communication paths
+AODV,"RREQ, RREP and RERR",On-demand routing and failure recovery
+Mobile IP,Home Agent and Foreign Agents,Mobility and gateway registration
+Backhaul,Microwave and Satellite,Connection to Command Centre

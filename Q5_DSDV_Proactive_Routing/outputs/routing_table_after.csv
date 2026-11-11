@@ -1,0 +1,7 @@
+Destination,Next Hop,Metric,Sequence Number
+A,A,0,206
+B,B,1,134
+C,B,4,158
+D,B,3,210
+E,B,2,178
+F,B,4,322
